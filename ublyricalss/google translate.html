@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage with google translate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>UK webdeveloper</h3>
+        <h1>Welcome to My Webpage</h1>
+        <div id="google_translate_element"></div>
+        <p> I created this webpage to create an webpage with google translate.
+            To make this more readable and user friendly to others in their native language.
+            You can use this javascript to translate any language to any language.
+            <br>
+           <br> Google translate is useful for this websites
+            <br>
+            <br>
+           <ul>
+              <li>News & Media</li>
+              <li>Blogs</li>
+              <li>Social Media</li>
+              <li>E-Commerce</li>
+              <li>Travel</li>
+              <li>Entertainment</li>
+              <li>Business</li>
+              <li>Education</li>
+            </ul>
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
